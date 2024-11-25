@@ -1,9 +1,5 @@
-import React from 'react';
-import { Item } from '../../types/Item';
-
-interface ItemListProps {
-  items: Item[];
-}
+import React from "react";
+import { ItemListProps } from "../../types/ItemList.types";
 
 export const ItemList: React.FC<ItemListProps> = ({ items }) => {
   if (items.length === 0) {
@@ -11,11 +7,11 @@ export const ItemList: React.FC<ItemListProps> = ({ items }) => {
   }
 
   return (
-    <div>
+    <div className="space-y-4">
       {items.map((item) => (
-        <div key={item.id} className="border p-4 rounded mb-2">
-          <h3 className="font-bold">{item.title}</h3>
-          <p>{item.body}</p>
+        <div key={item.id} className="border p-4 rounded bg-gray-50 shadow-sm">
+          <h3 className="font-bold text-lg">{item.title}</h3>
+          <p className="text-gray-700">{item.body}</p>
         </div>
       ))}
     </div>

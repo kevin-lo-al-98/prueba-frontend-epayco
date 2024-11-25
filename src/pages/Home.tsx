@@ -3,7 +3,8 @@ import { useItems } from "../hooks/useItems";
 import { useAddItem } from "../hooks/useAddItem";
 import { Form } from "../components/molecules/Form";
 import { ItemList } from "../components/organisms/ItemList";
-import { Item } from "../types/Item";
+import { Item } from "../types/Item.types";
+import Loading from "../components/atoms/Loading";
 
 export const Home: React.FC = () => {
   const { data: items, error, isLoading } = useItems();
@@ -18,7 +19,9 @@ export const Home: React.FC = () => {
     });
   };
 
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading) {
+    return <Loading size="w-12 h-12" color="fill-red-500" />;
+  }
   if (error) return <div>Error: {error.message}</div>;
 
   return (
