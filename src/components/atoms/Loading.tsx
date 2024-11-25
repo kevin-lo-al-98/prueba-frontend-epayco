@@ -2,8 +2,8 @@ import React from "react";
 import { LoadingProps } from "../../types/Loading.types";
 
 const Loading: React.FC<LoadingProps> = ({
-  size = "w-8 h-8", // Valor predeterminado para el tamaño
-  color = "fill-blue-600", // Valor predeterminado para el color
+  size = "w-8 h-8",  
+  color = "fill-blue-600", 
 }) => {
   return (
     <div className="flex items-center justify-center w-56 h-56 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
