@@ -1,5 +1,5 @@
 import React from "react";
-import { LoadingProps } from "../../types/Loading.types";
+import { LoadingProps } from "./Loading.types";
 
 const Loading: React.FC<LoadingProps> = ({
   size = "w-8 h-8",  

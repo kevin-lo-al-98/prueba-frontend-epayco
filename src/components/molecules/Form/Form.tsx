@@ -1,9 +1,9 @@
 import React from "react";
 import { useForm, Controller } from "react-hook-form";
-import { Button } from "../atoms/Button";
-import { Input } from "../atoms/Input";
-import { Textarea } from "../atoms/Textarea";
-import { FormProps, FormData } from "../../types/Form.types";
+import { FormProps, FormData } from "./Form.types";
+import { Input } from "../../atoms/Input/Input";
+import { Textarea } from "../../atoms/Textarea/Textarea";
+import { Button } from "../../atoms/Button/Button";
 
 export const Form: React.FC<FormProps> = ({ onSubmit }) => {
   const {
@@ -40,7 +40,9 @@ export const Form: React.FC<FormProps> = ({ onSubmit }) => {
         <p className="text-red-500 mb-5">{errors.body.message}</p>
       )}
 
-      <Button type="submit" size="small">Add Item</Button>
+      <Button type="submit" size="small">
+        Add Item
+      </Button>
     </form>
   );
 };

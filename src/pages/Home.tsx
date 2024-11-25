@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { useItems } from "../hooks/useItems";
 import { useAddItem } from "../hooks/useAddItem";
-import { Form } from "../components/molecules/Form";
-import { ItemList } from "../components/organisms/ItemList";
+import { Form } from "../components/molecules/Form/Form";
+import { ItemList } from "../components/molecules/ItemList/ItemList";
 import { Item } from "../types/Item.types";
-import Loading from "../components/atoms/Loading";
+import Loading from "../components/atoms/Loading/Loading";
 
 export const Home: React.FC = () => {
   const { data: items, error, isLoading } = useItems();
