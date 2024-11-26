@@ -40,9 +40,7 @@ export const Form: React.FC<FormProps> = ({ onSubmit }) => {
         <p className="text-red-500 mb-5">{errors.body.message}</p>
       )}
 
-      <Button type="submit" size="small">
-        Add Item
-      </Button>
+      <Button type="submit">Add Item</Button>
     </form>
   );
 };
