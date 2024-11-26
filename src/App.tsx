@@ -1,10 +1,11 @@
 import React from "react";
 import { Home } from "./pages/Home";
+import { Layout } from "./components/templates/Layout/Layout";
 
 export const App: React.FC = () => {
   return (
-    <div className="container mx-auto p-4">
+    <Layout>
       <Home />
-    </div>
+    </Layout>
   );
 };

@@ -2,11 +2,11 @@ import React from "react";
 import { LoadingProps } from "./Loading.types";
 
 const Loading: React.FC<LoadingProps> = ({
-  size = "w-8 h-8",  
-  color = "fill-blue-600", 
+  size = "w-8 h-8",
+  color = "fill-blue-600",
 }) => {
   return (
-    <div className="flex items-center justify-center w-56 h-56 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+    <div className="flex items-center justify-center w-full h-full border-none rounded-lg ">
       <div role="status">
         <svg
           aria-hidden="true"
