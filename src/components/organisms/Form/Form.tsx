@@ -13,7 +13,7 @@ export const Form: React.FC<FormProps> = ({ onSubmit }) => {
   } = useForm<FormData>();
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form className="max-w-md " onSubmit={handleSubmit(onSubmit)}>
       <Controller
         name="title"
         control={control}
